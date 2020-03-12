@@ -1,4 +1,3 @@
-# require_relative 'bank_account.rb'
 require 'pry'
 class Transfer
 
@@ -12,8 +11,6 @@ class Transfer
   end
 
   def valid?
-    # binding.pry
-    # BankAccount.new(@sender).valid? && BankAccount.new(@receiver).valid?
     @sender.valid? && @receiver.valid?
   end
 
